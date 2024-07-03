@@ -136,7 +136,7 @@
             }
           }
         },{
-          "title": "CustomTeaser",
+          "title": "Custom Teaser",
           "id": "custom-teaser",
           "plugins": {
             "xwalk": {
