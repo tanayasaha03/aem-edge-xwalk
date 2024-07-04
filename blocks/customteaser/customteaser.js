@@ -3,7 +3,7 @@ export default function decorate(block) {
     console.log('test',titleEl);
     console.log('test',pretitleEl);
 
-    const customTeaser =
+    /*const customTeaser =
         `<div class="leftcolumn">
             <div class="card">
                 <h2>TITLE HEADING</h2>
@@ -18,5 +18,5 @@ block.innerHTML = `
 <div class="customTeaser__wrapper ">
     ${customTeaser}
 </div>
-`;
+`;*/
 }
