@@ -190,10 +190,17 @@
     "id": "custom-teaser",
     "fields": [
       {
-        "component": "richtext",
+        "component": "text",
         "name": "Heading",
         "value": "",
-        "label": "Title",
+        "label": "Title Heading",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "Description",
+        "value": "",
+        "label": "Title Description",
         "valueType": "string"
       },
       {
