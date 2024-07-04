@@ -7,7 +7,7 @@ export default function decorate(block) {
         imageAltEl,
         paragraphEl] = block.children;
     
-        console.log('test',titleHeading);
+        
     console.log('test',paragraphEl);
     
 

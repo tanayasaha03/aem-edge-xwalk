@@ -137,14 +137,14 @@
           }
         },{
           "title": "Custom Teaser",
-          "id": "custom-teaser",
+          "id": "customteaser",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
                   "name": "Custom Teaser",
-                  "model": "custom-teaser",
+                  "model": "customteaser",
                   "text":"test"     
                            }
               }
