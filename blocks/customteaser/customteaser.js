@@ -1,21 +1,44 @@
 export default function decorate(block) {
     function getDemoTeaser(){
-    const [titleHeadingEl,titleDescriptionEl] = block.children;
-    console.log('test',titleHeadingEl);
-    console.log('test',titleDescriptionEl);
-
+    const [
+        titleHeadingEl,
+        titleDescriptionEl,
+        imageEl,
+        imageAltEl,
+        paragraphEl] = block.children;
+    
+        console.log('test',titleHeading);
+    console.log('test',paragraphEl);
+    
 
     const titleHeading = titleHeadingEl?.textContent?.trim();
     const titleDescription = titleDescriptionEl?.textContent?.trim();
+    const image = imageEl?.querySelector('picture');
+
+    console.log('test',image);
+    let img ;
+    if (image) {
+      img = image.querySelector('img');
+      img.removeAttribute('width');
+      img.removeAttribute('height');
+      const alt = imageAltEl?.textContent?.trim() || 'image';
+      img.setAttribute('alt', alt);
+    }
+
+    
+   
+    
 
     return {
         titleHeading,
-        titleDescription
+        titleDescription,
+        img
       };
 
     }
 
     const demoTeaser = getDemoTeaser(block);
+    
     
 
     const customTeaser =
@@ -23,7 +46,10 @@ export default function decorate(block) {
             <div class="card">
                  ${(demoTeaser.titleHeading) ? `<h2>${demoTeaser.titleHeading}</h2>` : ''}
                  ${(demoTeaser.titleDescription) ? `<h5>${demoTeaser.titleDescription}</h5>` : ''}
-                <div class="fakeimg" style="height:200px;">Image</div>
+
+                 ${(demoTeaser.img) ? `<div class="fakeimg" style="height:200px;" >${demoTeaser.img.outerHTML}</div>` : ''}
+               
+               
                 <p>Some text..</p>
                 <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
             </div>

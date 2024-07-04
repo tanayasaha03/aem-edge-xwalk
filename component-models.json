@@ -216,6 +216,14 @@
         "name": "imageAlt",
         "label": "Alt",
         "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "paragraph",
+        "label": "Paragraph",
+        "value": "",
+        "multi": true
       }
     ]
   },{
