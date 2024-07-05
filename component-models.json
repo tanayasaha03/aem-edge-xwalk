@@ -214,15 +214,13 @@
         "component": "text",
         "valueType": "string",
         "name": "imageAlt",
-        "label": "Alt",
-        "value": ""
+        "label": "Alt"
       },
       {
         "component": "richtext",
         "valueType": "string",
         "name": "paragraph",
-        "label": "Paragraph",
-        "value": ""
+        "label": "Paragraph"
       }
     ]
   },{

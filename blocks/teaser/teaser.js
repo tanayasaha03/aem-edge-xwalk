@@ -10,7 +10,8 @@ export default function decorate(block) {
       
   console.log('test1',imageEl);
   console.log('test2',imageAltEl);
-  console.log('test3',paragraphEl);
+  console.log('test4',paragraphEl);
+  
   
 
   const titleHeading = titleHeadingEl?.textContent?.trim();
@@ -24,6 +25,7 @@ export default function decorate(block) {
     img.removeAttribute('width');
     img.removeAttribute('height');
     const alt = imageAltEl?.textContent?.trim() || 'image';
+    console.log('test3',alt);
     img.setAttribute('alt', alt);
   }
 
