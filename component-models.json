@@ -187,7 +187,7 @@
     ]
   },
   {
-    "id": "customteaser",
+    "id": "demoTeaser",
     "fields": [
       {
         "component": "text",
