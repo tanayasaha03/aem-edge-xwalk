@@ -211,7 +211,7 @@
         "multi": false
       },
       {
-        "component": "richtext",
+        "component": "text",
         "valueType": "string",
         "name": "imageAlt",
         "label": "Alt"
