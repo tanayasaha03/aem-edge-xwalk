@@ -8,14 +8,16 @@ export default function decorate(block) {
       paragraphEl] = block.children;
   
       
-  console.log('test',paragraphEl);
+  console.log('test1',imageEl);
+  console.log('test2',imageAltEl);
+  console.log('test3',paragraphEl);
   
 
   const titleHeading = titleHeadingEl?.textContent?.trim();
   const titleDescription = titleDescriptionEl?.textContent?.trim();
   const image = imageEl?.querySelector('picture');
 
-  console.log('test1',image);
+
   let img ;
   if (image) {
     img = image.querySelector('img');
