@@ -222,7 +222,8 @@
         "valueType": "string",
         "name": "paragraph",
         "label": "Paragraph",
-        "value": ""
+        "value": "",
+        "multi": true
       }
     ]
   },{
