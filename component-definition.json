@@ -145,7 +145,7 @@
                 "template": {
                   "name": "Demo Teaser",
                   "model": "demoTeaser"   
-                           }
+                }
               }
             }
           }
