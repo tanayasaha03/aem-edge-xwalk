@@ -213,8 +213,8 @@
       {
         "component": "richtext",
         "valueType": "string",
-        "name": "paragraph1",
-        "label": "Paragraph1"
+        "name": "imageAlt",
+        "label": "Alt"
       },
       {
         "component": "richtext",
