@@ -4,12 +4,10 @@ export default function decorate(block) {
       titleHeadingEl,
       titleDescriptionEl,
       imageEl,
-      imageAltEl,
       paragraphEl] = block.children;
   
       
   console.log('test1',imageEl);
-  console.log('test2',imageAltEl);
   console.log('test4',paragraphEl);
   
   
@@ -17,6 +15,7 @@ export default function decorate(block) {
   const titleHeading = titleHeadingEl?.textContent?.trim();
   const titleDescription = titleDescriptionEl?.textContent?.trim();
   const image = imageEl?.querySelector('picture');
+  const paragraph =  paragraphEl?.textContent?.trim();
 
 
   let img ;
@@ -24,26 +23,21 @@ export default function decorate(block) {
     img = image.querySelector('img');
     img.removeAttribute('width');
     img.removeAttribute('height');
-    const alt = imageAltEl?.textContent?.trim() || 'image';
-    console.log('test3',alt);
-    img.setAttribute('alt', alt);
   }
 
-  
- 
-  
 
   return {
       titleHeading,
       titleDescription,
-      img
+      img,
+      paragraph
     };
 
   }
 
   const demoTeaser = getDemoTeaser(block);
   
-  
+
 
   const customTeaser =
       `<div class="leftcolumn">
@@ -51,6 +45,7 @@ export default function decorate(block) {
                ${(demoTeaser.titleHeading) ? `<h2>${demoTeaser.titleHeading}</h2>` : ''}
                ${(demoTeaser.titleDescription) ? `<h5>${demoTeaser.titleDescription}</h5>` : ''}
                ${(demoTeaser.img) ? `<div class="fakeimg" style="height:200px;" >${demoTeaser.img.outerHTML}</div>` : ''}
+               ${(demoTeaser.paragraph) ? `<p>${demoTeaser.paragraph}</p>` : ''}
               
           </div>
       </div>`;
